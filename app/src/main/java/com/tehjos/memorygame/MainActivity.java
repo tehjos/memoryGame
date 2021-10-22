@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             view.setBackgroundResource(drawableID);
             turnedCardOne = drawableID;
             PairCheck.pairCheck[tagClicked / 3][tagClicked % 3] = true;
-            int tagClickedOne = tagClicked;
-            int layoutKeyOne = layoutKey;
+            tagClickedOne=tagClicked;
+
             previousView = view;
 
             numClicked++;
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 previousView.setBackgroundResource(R.drawable.cardback);
 
                 PairCheck.pairCheck[tagClickedOne / 3][tagClickedOne % 3] = false;
-                PairCheck.pairCheck[tagClickedOne / 3][tagClickedOne % 3] = false;
+                PairCheck.pairCheck[tagClicked / 3][tagClicked % 3] = false;
                 turnedCardOne = 0;
                 turnedCardTwo = 1;
 
