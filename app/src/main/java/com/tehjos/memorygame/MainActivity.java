@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final boolean[][] openedCards = {
             {false, false, false},
             {false, false, false},
+            {false, false, false},
             {false, false, false}
     };
 
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         drawablesManager.shuffle();
 
-        final ImageView[][] imageViews = new ImageView[3][4];
+        final ImageView[][] imageViews = new ImageView[4][3];
         imageViews[0][0] = findViewById(R.id.imageView1);
         imageViews[0][1] = findViewById(R.id.imageView2);
         imageViews[0][2] = findViewById(R.id.imageView3);
